@@ -126,6 +126,7 @@ namespace Globomantics.IdentityServer
             //app.ApplyDatabaseSchema();
             //app.PopulateDatabaseIfEmpty();
 
+            // This code is used when having a reverse proxy to forward the headers.
             var forwardedHeaderOptions = new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
